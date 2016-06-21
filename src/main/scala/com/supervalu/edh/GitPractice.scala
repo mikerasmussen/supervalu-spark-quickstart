@@ -20,6 +20,17 @@ object GitPractice {
     zeroThruNine.collect().foreach(println)
     println("########################################")
     println()
+
+
+    val data = Array(10, 12, 14, 16, 18, 20)
+    val evensTenThruTwenty = sc.parallelize(data)     // an RDD of ints
+    println()
+    println("########################################")
+    println("'evensTenThruTwenty' is:")
+    evensTenThruTwenty.collect().foreach(println)
+    println("########################################")
+    println()
+
   }
 
 }
